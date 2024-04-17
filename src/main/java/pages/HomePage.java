@@ -1,3 +1,5 @@
+package pages;
+
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 
@@ -5,7 +7,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class HomePage {
 
-//    Css Locators (id)
+    //    Css Locators (id)
     private SelenideElement setHours = $("#form-input-hour");
     private SelenideElement setMinutes = $("#form-input-minute");
     private SelenideElement inputFromField = $("#form-input-from");
@@ -20,8 +22,6 @@ public class HomePage {
     private SelenideElement typeBike = $("from-type-bike");
     private SelenideElement typeScooter = $("from-type-scooter");
     private SelenideElement typeDrive = $("from-type-drive");
-
-
 
 
     public void inputHours(String hours) {
@@ -50,6 +50,30 @@ public class HomePage {
 
     public void choiceTypeCustom() {
         typeCustom.click();
+    }
+
+    public void choiceTypeCar() {
+        typeCar.click();
+    }
+
+    public void choiceTypeWalk() {
+        typeWalk.click();
+    }
+
+    public void choiceTypeTaxi() {
+        typeTaxi.click();
+    }
+
+    public void choiceTypeBike() {
+        typeBike.click();
+    }
+
+    public void choiceTypeScooter() {
+        typeScooter.click();
+    }
+
+    public void choiceTypeDrive() {
+        typeDrive.click();
     }
 
 }
