@@ -23,7 +23,7 @@ public class HomePage {
     private SelenideElement typeScooter = $("from-type-scooter");
     private SelenideElement typeDrive = $("from-type-drive");
 
-
+// Methods
     public void inputHours(String hours) {
         setHours.setValue(hours);
     }
