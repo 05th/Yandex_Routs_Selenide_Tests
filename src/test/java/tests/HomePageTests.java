@@ -15,7 +15,7 @@ public class HomePageTests {
         homePage = new HomePage();
     }
     @Test
-    public void testRoute() {
+    public void testRouteTypeOptimal() {
         String from = "Усачева, 3";
         String to = "Фрунзенская набережная, 46";
         String hours = "10";
@@ -28,4 +28,16 @@ public class HomePageTests {
         homePage.choiceTypeOptional();
 
     }
+    @Test
+    public void testRouteTypeFastest() {
+
+
+    }
+
+    @Test
+    public void testRouteTypeCustom() {
+
+    }
+
+
 }
