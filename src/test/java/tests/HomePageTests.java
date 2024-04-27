@@ -30,8 +30,16 @@ public class HomePageTests {
     }
     @Test
     public void testRouteTypeFastest() {
+        String from = "Усачева, 15";
+        String to = "Фрунзенская набережная, 58";
+        String hours = "12";
+        String minutes = "10";
 
-
+        homePage.inputHours(hours);
+        homePage.inputMinutes(minutes);
+        homePage.inputDataFrom(from);
+        homePage.inputDataTo(to);
+        homePage.choiceTypeFastest();
     }
 
     @Test
