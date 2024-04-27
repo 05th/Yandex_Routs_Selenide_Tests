@@ -44,6 +44,17 @@ public class HomePageTests {
 
     @Test
     public void testRouteTypeCustom() {
+        String from = "Усачева, 48";
+        String to = "Фрунзенская набережная, 15";
+        String hours = "11";
+        String minutes = "45";
+
+        homePage.inputHours(hours);
+        homePage.inputMinutes(minutes);
+        homePage.inputDataFrom(from);
+        homePage.inputDataTo(to);
+        homePage.choiceTypeCustom();
+
 
     }
 
