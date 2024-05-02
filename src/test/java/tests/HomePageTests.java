@@ -1,5 +1,6 @@
 package tests;
 
+import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import pages.HomePage;
@@ -14,6 +15,7 @@ public class HomePageTests {
         open("https://qa-routes.praktikum-services.ru/");
         homePage = new HomePage();
     }
+
     @Test
     public void testRouteTypeOptimal() {
         String from = "Усачева, 3";
@@ -28,6 +30,7 @@ public class HomePageTests {
         homePage.choiceTypeOptional();
 
     }
+
     @Test
     public void testRouteTypeFastest() {
         String from = "Усачева, 15";
@@ -57,8 +60,10 @@ public class HomePageTests {
 
 
     }
+
     @Test
-
-
-
+    public void testChoiceOptimalOptions() {
+        homePage.choiceTypeOptional();
+        homePage.choiceTypeCar();
+    }
 }
