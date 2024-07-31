@@ -59,7 +59,8 @@ public class HomePageTests {
 
 
     }
-// Selenide
+
+    // Selenide
     @Test
     public void testChoiceOptimalOptions() {
         homePage.choiceTypeOptional();
