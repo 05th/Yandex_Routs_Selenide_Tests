@@ -14,7 +14,7 @@ public class HomePageTests {
         open("https://qa-routes.praktikum-services.ru/");
         homePage = new HomePage();
     }
-
+// route type Optimal
     @Test
     public void testRouteTypeOptimal() {
         String from = "Усачева, 3";
@@ -29,7 +29,7 @@ public class HomePageTests {
         homePage.choiceTypeOptional();
 
     }
-
+// route type Fastest
     @Test
     public void testRouteTypeFastest() {
         String from = "Усачева, 15";
@@ -43,7 +43,7 @@ public class HomePageTests {
         homePage.inputDataTo(to);
         homePage.choiceTypeFastest();
     }
-
+// route type Custom
     @Test
     public void testRouteTypeCustom() {
         String from = "Усачева, 48";
@@ -59,8 +59,7 @@ public class HomePageTests {
 
 
     }
-
-    // Selenide
+// choice Optimal type
     @Test
     public void testChoiceOptimalOptions() {
         homePage.choiceTypeOptional();
