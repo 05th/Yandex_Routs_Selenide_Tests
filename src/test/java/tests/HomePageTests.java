@@ -65,4 +65,6 @@ public class HomePageTests {
         homePage.choiceTypeOptional();
         homePage.choiceTypeCar();
     }
+
+
 }
