@@ -6,14 +6,8 @@ import pages.HomePage;
 
 import static com.codeborne.selenide.Selenide.open;
 
-public class HomePageTests {
-    private static HomePage homePage;
+public class HomePageTests extends BaseTest{
 
-    @BeforeAll
-    public static void setUp() {
-        open("https://qa-routes.praktikum-services.ru/");
-        homePage = new HomePage();
-    }
 // route type Optimal
     @Test
     public void testRouteTypeOptimal() {
